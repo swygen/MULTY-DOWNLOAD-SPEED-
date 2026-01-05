@@ -5,7 +5,7 @@ app = Flask('')
 
 @app.route('/')
 def home():
-    return "Swygen IT: Business Server Online 🚀"
+    return "Swygen IT: Database Connected & Running 🚀"
 
 def run():
     app.run(host='0.0.0.0', port=8080)
@@ -13,3 +13,4 @@ def run():
 def keep_alive():
     t = Thread(target=run)
     t.start()
+
